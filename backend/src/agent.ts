@@ -1,4 +1,5 @@
 import {
+  convertToModelMessages,
   smoothStream,
   stepCountIs,
   streamText,
@@ -57,9 +58,7 @@ export const agent = async ({
 }: AgentOptions) => {
   const { anthropic, bedrock } = buildProviderOptions(modelId, modelTier);
 
-  const initialMessages = await (await import("ai")).convertToModelMessages(
-    messages
-  );
+  const initialMessages = await convertToModelMessages(messages);
 
   const result = streamText({
     model,
