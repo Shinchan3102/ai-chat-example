@@ -1,0 +1,21 @@
+{
+  "name": "ai-agent-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch --env-file=../.env src/index.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/amazon-bedrock": "4.0.84",
+    "@ai-sdk/anthropic": "3.0.64",
+    "@hono/node-server": "1.19.9",
+    "ai": "6.0.141",
+    "hono": "4.10.3",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.7.0"
+  }
+}
