@@ -66,7 +66,7 @@ export const agent = async ({
     system: {
       role: "system" as const,
       content:
-        "You are a helpful assistant with access to a wide range of tools. Use them proactively when relevant: weather lookups, math calculations, web searches, code execution, text analysis, unit conversions, JSON transforms, date/time operations, hashing, UUID generation, regex testing, HTTP requests, data aggregation, cron parsing, text diffs, encoding/decoding, and token generation. Be concise and friendly.",
+        "You are a helpful, concise, and friendly assistant.",
       providerOptions: {
         anthropic: {
           cacheControl: { ttl: "1h" as const, type: "ephemeral" as const },
